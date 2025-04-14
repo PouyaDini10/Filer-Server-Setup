@@ -19,15 +19,15 @@ To configure and test network file share permissions in a Windows Server environ
 ![image](https://github.com/user-attachments/assets/0876e9df-3d90-4428-8691-80d21bedf09f)
 
 
-### Folder: “read-access”, Group: “Domain Users”, Permissions: “Read”
+#### Folder: “read-access”, Group: “Domain Users”, Permissions: “Read”
    
  ![image](https://github.com/user-attachments/assets/0d418d25-873e-4834-b29a-2c7d4b96339f)
 
-### Folder: “write-access”, Group: “Domain Users”, Permissions: “Read/Write”
+#### Folder: “write-access”, Group: “Domain Users”, Permissions: “Read/Write”
 
    ![image](https://github.com/user-attachments/assets/39e0ba0b-4578-4fae-b1e8-dfc73693bc2a)
 
-### Folder: “no-access”, Group: “Domain Admins”, Permissions: “Read/Write”
+#### Folder: “no-access”, Group: “Domain Admins”, Permissions: “Read/Write”
 
 ![image](https://github.com/user-attachments/assets/bee93a82-80c3-4ff8-95ca-459068bc4b11)
 
@@ -37,18 +37,21 @@ To configure and test network file share permissions in a Windows Server environ
 5. On Client-1, navigate to the shared folder(In File explorer search for "\\dc-1").
 6. From here, I will try to access the folders I just created.
 
-### File explorer search for "\\dc-1
+#### File explorer search for "\\dc-1
 ![image](https://github.com/user-attachments/assets/b7d28e5c-e8b2-430f-aa9e-6368c86340d7)
 
 <br><br>
-### Read-access only
+#### Read-access only
 
 ![image](https://github.com/user-attachments/assets/01142f6a-9738-464c-89ef-c72df517cb4b)
 
-### Read/Write access
+#### Read/Write access
 As displayed below, I successfully created a text document inside this folder with Read/Write access.
 
 ![image](https://github.com/user-attachments/assets/ca55d81c-9461-4baf-ba42-177d211a3fd0)
+
+
+## Create an ACCOUNTANTS Security Group, assign permissions, and test access
 
 
 
