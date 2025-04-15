@@ -53,6 +53,23 @@ As displayed below, I successfully created a text document inside this folder wi
 
 ## Create an ACCOUNTANTS Security Group, assign permissions, and test access
 
+7. In DC-1, in Active Directory Users and Computers(AD UC), I will create a new security group called “ACCOUNTANTS”.
+8. On the accounting folder I created earlier, I will set the following permissions:  Folder: “accounting,” Group: “ACCOUNTANTS,” Permissions: “Read/Write.”
+9. On Client-1, I will try to access the "accounting" folder. It should fail(we haven't granted permission yet). To access the accounting folder, on File Explorer, search for "\\dc-1".
+10. On DC-1 VM, open AD UC(Active Directory Users & Computers), navigate to the Groups OU(Organizational Unit), and under "ACCOUNTANTS, I'm going to add this user "gida.wupa" to the security group.
+11. Back on the Client-1 VM, logged on as "gida.wupa" user, I will attempt to open the folder and see if I was granted access.
+
+### Create 'ACCOUNTANTS' Group in AD on DC-1
+![image](https://github.com/user-attachments/assets/bdf97ce8-981f-48ad-9ba8-71a4b8227814)
+
+### Set Read/Write Permissions for 'ACCOUNTANTS' on Accounting Folder
+![image](https://github.com/user-attachments/assets/5e233c97-57fe-4bf1-aed0-e74ca04f7041)
+
+### Test Access to 'Accounting' Folder from Client-1 (Expect Fail)
+![image](https://github.com/user-attachments/assets/d6dc7058-ef0b-48e3-be9b-0c599ccdc330)
+
+### Verify 'ACCOUNTANTS' Folder Access as gida.wupa on Client-1
+![image](https://github.com/user-attachments/assets/37944eb4-3e92-4a9e-8d55-99fc572da189)
 
 
 
